@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear&display=swap");
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Preahvihear", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.bg-grcard {
+  /* Rectangle 984 */
+
+  background: linear-gradient(
+    110.49deg,
+    #130428 19.95%,
+    #251043 67.64%,
+    #38126d 107.08%,
+    #261045 156.61%,
+    #190634 183.21%
+  );
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  padding: 7px;
+}
+.card-container {
+  position: relative;
+}
+#OpenMenue {
+  display: none;
+}

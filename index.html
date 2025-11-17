@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Header with Tailwind</title>
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <!-- Tailwind CDN for quick demo -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="w-full bg-[var(--brand-bg)] m-0 p-0
+    ">
+        <div class="w-full max-w-screen mx-1 px-6 sm:px-8 lg:px-10 ">
+            <nav class="flex items-center justify-center gap-100 h-[80px]">
+                <!-- Logo (left) -->
+                <div class="flex items-center justify-center mt-15">
+                    <a href="#" class="flex items-center gap-3
+                    justify-center
+                    mt-15 ">
+                        <img src="./photo/ChatGPT Image Nov 9, 2025, 12_35_33 PM.png" alt="Logo"
+                            class="h-[130px] w-[130px] rounded-md object-cover z-10" />
+
+                    </a>
+                </div>
+
+                <!-- Desktop menu (right) -->
+                <div class="hidden md:flex flex items-center justify-center gap-8">
+                    <a href="#Home" class="text-md font-medium">Home</a>
+                    <a href="#About" class="text-sm font-medium">About</a>
+                    <a href="#Experience" class="text-sm font-medium">Experience</a>
+                    <a href="#Contact" class="text-sm font-medium">Contact</a>
+
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden relative">
+                    <button id="mobileBtn" aria-expanded="false" aria-controls="mobileMenu"
+                        class="relative inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white bg-grcard">
+                        <span class="sr-only">Open menu</span>
+
+                        <!-- آیکون باز -->
+                        <svg id="iconOpen" class="h-6 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M4 6h16" />
+                            <path d="M4 12h16" />
+                            <path d="M4 18h16" />
+                        </svg>
+
+                        <!-- آیکون بسته -->
+                        <svg id="iconClose" class="h-6 w-6 hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <!-- منو -->
+                    <div id="mobileMenu" class="absolute top-[-5px] right-[80px] max-w-screen w-[350px] h-[265px]   bg-grcard shadow-lg rounded-md 
+            opacity-0 pointer-events-none transition-all duration-300 md:hidden z-1 border-t-2 border-secondry"
+                        data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+                        <div class="border-t border-white/10">
+                            <a href="#Home" class="block text-white/90 p-4 leading-[2rem] hover:bg-[#11071f]">Home</a>
+                            <a href="#About" class="block text-white/90 p-4 leading-[2rem] hover:bg-[#11071f]">About</a>
+                            <a href="#Experience"
+                                class="block text-white/90 p-4 leading-[2rem] hover:bg-[#11071f]">Experience</a>
+                            <a href="#Contact"
+                                class="block text-white/90 p-4 leading-[2rem] hover:bg-[#11071f]">Contact</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+    </header>
+    <main class=" text-white">
+        <div class=" w-full max-w-screen m-0 grid justify-center  items-center gap-2 grid-cols-1 bg-[#11071f]
+        bg-cover
+    absolute
+    max-w-[1500px]
+    w-[1500px]
+    
+    h-[3300px]
+    border border-black
+    shadow-[0_4px_4px_rgba(0,0,0,0.25)] ">
+            <div class="flex items-center justify-center   ml-[200px] sm:mb-[-10px] sm:mr-[-240px] pt-50 ">
+
+                <img src="./photo/Arrow.png" class=" hidden sm:inline-block md:inline-block " alt="">
+
+                <p class="text-white ">Hello! I Am <span class="text-[var(--text-color1)]">Mohammad
+                        Mahdi</span></p>
+            </div>
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-10 px-6 py-20 md:px-20 lg:px-40">
+                <!-- عکس -->
+                <div class="flex justify-center md:justify-end"> <img src="./photo/Me.png"
+                        class="w-[220px] h-[220px] md:w-[260px] md:h-[260px] object-cover" alt="Me" id="Home"
+                        data-aos="fade-up"> </div>
+                <!-- متن -->
+                <div
+                    class="text-center md:text-left space-y-4 mb-[220px] m-[5px] w-[400px] sm:w-[450px] md:w-[750px] xl:w-[750px]">
+                    <p class="font-preahvihear text-[17px] text-white"> a designer who </p>
+                    <h2
+                        class="font-preahvihear text-[35px] md:text-[45px] leading-[1.3] text-white relative inline-block">
+                        Judges a book by its<br> <span class="text-[var(--text-color1)] relative inline-block">
+                            cover
+                            <img src="./photo/Ellipse 5(1).png"
+                                class="absolute top-[60%] left-0 -translate-y-1/2 w-full opacity-70" alt=""> </span>
+                        ...
+                    </h2>
+                    <p class="font-preahvihear text-[13px] md:text-[14px] text-white"> Because if the cover does not
+                        impress you what else can? </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center px-6 py-16 md:px-12 lg:px-20 space-y-6 mt-[120px] sm:mt-[220px] md:mt-[320px] mb-[40px]"
+                data-aos="fade-up">
+                <h2
+                    class="text-[28px] sm:text-[32px] md:text-[36px] font-bold leading-[45px] md:leading-[55px] text-white font-preahvihea border border-black shadow-lg p-6 rounded-lg p-[40px]">
+                    I'm a <span class="text-[var(--text-color1)] ">Frontend </span> Developer. | </h2>
+                <p class="max-w-[600px] text-[16px] sm:text-[18px] md:text-[20px] leading-[28px] md:leading-[32px] text-white font-preahvihea pb-[110px]"
+                    id="About">
+                    Currently! I am also active on <a href="https://t.me/Mohammadmahdi81"
+                        class="text-[var(--linkdin-color)] hover:underline hover:text-white"><i
+                            class="fa-brands fa-telegram mr-2"></i>Telegram </a> </p>
+                <p
+                    class="max-w-[650px] text-[20px] sm:text-[22px] md:text-[25px] leading-[28px] md:leading-[34px] text-white font-preahvihea ">
+                    A <span class="text-[var(--text-color1)] ">frontend </span> developer designs visual elements
+                    for
+                    websites and web applications using HTML, CSS, and
+                    JavaScript. They leverage frameworks like React and Vue.js for better user experiences.
+                    Additionally, they use tools like Git and CMS for project management and efficiency. </p>
+            </div>
+            <div class="card-container w-full   py-16 flex flex-col items-center text-center">
+                <!-- عنوان -->
+                <div class=" container h-20">
+                    <h2 class="text-[28px] sm:text-[32px] md:text-[38px] font-preahvihear font-bold text-white "
+                        id="Experience">
+                        Work Experience
+                    </h2>
+                </div>
+                <div
+                    class="  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center w-full max-w-[1200px]">
+                    <!-- HTML -->
+                    <div class="w-full max-w-[500px] h-[120px]  font-preahvihear relative flex flex-col border-t-2 border-secondry text-white bg-grcard rounded-xl  px-4 py-5  items-center  gap-8 "
+                        data-aos="zoom-in-right">
+                        <div class="flex items-center mb-4"> <i class="fa-brands fa-html5 text-red-600 text-[40px]"></i>
+                            <h2 class="font-bold text-white text-[20px] ml-3">HTML</h2>
+                        </div>
+                        <div class="relative w-[100%] h-2 bg-gray-700 rounded-md">
+                            <div class="bg-[var(--text-color1)] h-full w-[70%]  rounded-md"> <span
+                                    class="absolute top-[-25px] right-0 text-white text-xs">70%</span> </div>
+                        </div>
+                    </div> <!-- CSS -->
+                    <div class=" w-full max-w-[500px] h-[120px] font-preahvihear relative flex flex-col items-center border-t-2 border-secondry text-white bg-grcard rounded-xl  px-5 py-5  items-center gap-8"
+                        data-aos="zoom-in-left">
+                        <div class="flex items-center  mb-4">
+                            <a href="#Home"></a> <i class="fa-brands fa-css3-alt text-blue-600 text-[40px]"></i>
+                            <h2 class="font-bold text-white  text-[20px] ml-3">CSS</h2>
+                        </div>
+                        <div class="relative w-full h-2 bg-gray-700 rounded-md">
+                            <div class="bg-[var(--text-color1)] h-full w-[70%] rounded-md relative"> <span
+                                    class="absolute top-[-25px] right-0 text-white text-xs">70%</span> </div>
+                        </div>
+                    </div> <!-- JS -->
+                    <div class=" w-full max-w-[500px] h-[120px] font-preahvihear relative flex flex-col border-t-2 border-secondry text-white bg-grcard rounded-xl  px-4 py-5  items-center gap-8"
+                        data-aos="zoom-in-right">
+                        <div class="flex items-center mb-4"> <i
+                                class="fa-brands fa-square-js text-yellow-500 text-[40px]"></i>
+                            <h2 class="font-bold text-white text-[20px] ml-3">JavaScript</h2>
+                        </div>
+                        <div class="relative w-full h-2 bg-gray-700 rounded-md">
+                            <div class="bg-[var(--text-color1)] h-full w-[50%] rounded-md relative"> <span
+                                    class="absolute top-[-25px] right-0 text-white text-xs">50%</span> </div>
+                        </div>
+                    </div> <!-- Tailwind -->
+                    <div class="w-full max-w-[500px] h-[120px] font-preahvihear relative flex flex-col border-t-2 border-secondry text-white bg-grcard rounded-xl px-6 py-6 items-center gap-8"
+                        data-aos="zoom-in-left">
+                        <div class="flex items-center mb-3">
+                            <svg width="48" height="48" viewBox="0 0 256 256" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1">
+
+                                <g transform="translate(0, 0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" fill="none"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="#242938" rx="60" />
+                                        <path fill="url(#paint0_linear_2_119)" fill-rule="evenodd"
+                                            d="M83 110C88.9991 86.0009 104.001 74 128 74C164 74 168.5 101 186.5 105.5C198.501 108.501 209 104.001 218 92C212.001 115.999 196.999 128 173 128C137 128 132.5 101 114.5 96.5C102.499 93.4991 92 97.9991 83 110ZM38 164C43.9991 140.001 59.0009 128 83 128C119 128 123.5 155 141.5 159.5C153.501 162.501 164 158.001 173 146C167.001 169.999 151.999 182 128 182C92 182 87.5 155 69.5 150.5C57.4991 147.499 47 151.999 38 164Z"
+                                            clip-rule="evenodd" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_2_119" x1="86.5" x2="163.5" y1="74"
+                                                y2="185.5" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#32B1C1" />
+                                                <stop offset="1" stop-color="#14C6B7" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </g>
+
+                            </svg>
+                            <h2 class="font-bold text-white text-[20px] ml-3">Tailwind</h2>
+                        </div>
+                        <div class="relative w-full h-2 bg-gray-700 rounded-md">
+                            <div class="bg-[var(--text-color1)] h-full w-[30%] rounded-md relative"> <span
+                                    class="absolute top-[-25px] right-0 text-white text-xs">30%</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Section -->
+            <div class="w-full px-6 py-16 flex flex-col items-center text-center pt-0">
+                <!-- Title -->
+                <div class="container pt-0 p-15 mt-0">
+                    <h2
+                        class="text-[28px] sm:text-[32px] md:text-[38px] font-preahvihear font-bold text-white mb-3 pb-5">
+                        Get In Touch
+                    </h2>
+                    <p class="max-w-[600px] text-[16px] md:text-[18px] text-white/80 mb-12 font-preahvihear">
+                        Have a project in mind? Feel free to reach out and let's create something amazing together!
+                    </p>
+                </div>
+
+                <!-- Contact Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center w-full max-w-[1200px] h-[400px] md:h-[460px] sm:h-[460px] mt-0"
+                    id="Contact">
+                    <!-- Email Card -->
+                    <div class="w-full max-w-[320px] font-preahvihear flex flex-col items-center gap-4 bg-grcard rounded-xl px-6 py-8 border-t-2 border-[var(--text-color1)] hover:shadow-lg hover:shadow-[var(--text-color1)]/30 transition-all duration-300"
+                        data-aos="fade-up">
+                        <div class="text-[var(--text-color1)] text-[48px]">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-[18px]">Email</h3>
+                        <p class="text-white/70 text-[14px]">Get in touch via email</p>
+                        <a href="mahdizaremirok@gmail.com"
+                            class="text-[var(--text-color1)] hover:text-white hover:underline text-[14px] font-medium">
+                            mahdizaremirok@gmail.com
+                        </a>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="w-full max-w-[320px] font-preahvihear flex flex-col items-center gap-4 bg-grcard rounded-xl px-6 py-8 border-t-2 border-[var(--text-color1)] hover:shadow-lg hover:shadow-[var(--text-color1)]/30 transition-all duration-300"
+                        data-aos="fade-up">
+                        <div class="text-[var(--text-color1)] text-[48px]">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-[18px]">Phone</h3>
+                        <p class="text-white/70 text-[14px]">Call me directly</p>
+                        <a href="tel:+989134462775"
+                            class="text-[var(--text-color1)] hover:text-white hover:underline text-[14px] font-medium">
+                            +98 913 446 2775
+                        </a>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="w-full max-w-[320px] font-preahvihear flex flex-col items-center gap-4 bg-grcard rounded-xl px-6 py-8 border-t-2 border-[var(--text-color1)] hover:shadow-lg hover:shadow-[var(--text-color1)]/30 transition-all duration-300"
+                        data-aos="fade-right">
+                        <div class="text-[#1877f2] text-[48px]">
+                            <i class="fa fa-linkedin-square"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-[18px]">LinkedIn</h3>
+                        <p class="text-white/70 text-[14px]">Connect on LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/mahdi-zaremirok-16b433344" target="_blank"
+                            class="text-[#1877f2] hover:text-white hover:underline text-[14px] font-medium">
+                            Visit Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="w-full max-w-[700px] bg-grcard rounded-xl px-6 sm:px-8 py-10 hidden border-t-2 border-[var(--text-color1)] "
+                    data-aos="fade-up" data-aos-duration="3000">
+                    <h3 class="font-bold text-white text-[22px] py-5 font-preahvihear ">Send me a Message
+                    </h3>
+                    <form class="space-y-5" id="contactForm">
+                        <!-- Name Field -->
+                        <div class="space-y-2">
+                            <label class="block text-white/80 text-[14px] text-left font-preahvihear">Your Name</label>
+                            <input type="text" placeholder="John Doe" required
+                                class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[var(--text-color1)] focus:ring-2 focus:ring-[var(--text-color1)]/30 transition-all duration-300">
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="space-y-2">
+                            <label class="block text-white/80 text-[14px] font-preahvihear text-left ">Your
+                                Email</label>
+                            <input type="email" placeholder="john@example.com" required
+                                class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[var(--text-color1)] focus:ring-2 focus:ring-[var(--text-color1)]/30 transition-all duration-300">
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="space-y-2">
+                            <label class="block text-white/80 text-[14px] font-preahvihear text-left ">Subject</label>
+                            <input type="text" placeholder="Project Inquiry" required
+                                class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[var(--text-color1)] focus:ring-2 focus:ring-[var(--text-color1)]/30 transition-all duration-300">
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="space-y-2">
+                            <label class="block text-white/80 text-[14px] font-preahvihear text-left ">Message</label>
+                            <textarea placeholder="Tell me about your project..." rows="5" required
+                                class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[var(--text-color1)] focus:ring-2 focus:ring-[var(--text-color1)]/30 transition-all duration-300 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-[var(--text-color1)] text-white font-bold py-3 rounded-lg hover:bg-[var(--text-color1)]/90 transition-all duration-300 font-preahvihear">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://kit.fontawesome.com/760c003bd8.js" crossorigin="anonymous"></script>
+    <script src="./Js/icon.js"></script>
+    <script src="./Js/script.js" defer></script>
+</body>
+
+</html>
